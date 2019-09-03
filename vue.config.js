@@ -1,5 +1,5 @@
 module.exports = {
-  css: {
+    css: {
     loaderOptions: {
       postcss: {
         plugins: [
@@ -24,5 +24,16 @@ module.exports = {
         'import': []
       }
     }
-  }
+  },
+    devServer: {
+        port: 8085, // 端口号
+        host: 'localhost',
+        open: true, //配置自动启动浏览器
+        https: false, // https:{type:Boolean}
+    },
+    lintOnSave: false, // 是否使用eslint
+    // productionSourceMap：{ type:Bollean,default:true } 生产源映射
+    // 如果您不需要生产时的源映射，那么将此设置为false可以加速生产构建
+    productionSourceMap: false,
+
 }
