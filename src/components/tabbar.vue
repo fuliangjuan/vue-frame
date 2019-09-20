@@ -5,7 +5,7 @@
                     :key="index"
                     :name="item.linkTo"
                     :icon="item.icon"
-                    :to="item.linkTo"
+                    :to="'/'+item.linkTo"
             >{{item.name}}</van-tabbar-item>
         </van-tabbar>
 </template>

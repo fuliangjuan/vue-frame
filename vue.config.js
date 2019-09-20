@@ -27,7 +27,7 @@ module.exports = {
   },
     devServer: {
         port: 8085, // 端口号
-        host: 'localhost',
+        host: '0.0.0.0',
         open: true, //配置自动启动浏览器
         https: false, // https:{type:Boolean}
     },
@@ -35,5 +35,5 @@ module.exports = {
     // productionSourceMap：{ type:Bollean,default:true } 生产源映射
     // 如果您不需要生产时的源映射，那么将此设置为false可以加速生产构建
     productionSourceMap: false,
-
+    // publicPath:"172.28.171.11"
 }

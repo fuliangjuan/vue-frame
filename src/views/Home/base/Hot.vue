@@ -102,7 +102,8 @@
             }
         },
         mounted(){
-            console.log(this.categorys[this.categorys.page[0]])
+            // console.log(this.categorys[this.categorys.page[0]])
+            // console.log(process.env.BASE_URL)
             this.init_Swiper()
         }
 
