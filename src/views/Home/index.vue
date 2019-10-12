@@ -7,6 +7,7 @@
                 sticky
                 lazy-render
                 @click="handleTab"
+                @change="changeTab"
         >
             <van-tab
                     v-for="item in tagsBar"
@@ -43,6 +44,9 @@
             handleTab(name,ittle){
                 console.log(name);
                 this.$router.push({name: name})
+            },
+            changeTab(name,tittle){
+                // this.$router.push({name: name})
             }
         }
     }

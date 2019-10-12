@@ -16,6 +16,7 @@
         data(){
             return {
                 active:'home',
+                ele:'',
                 Tabbar:[
                     {name:'首页',icon:'wap-home',linkTo:'home'},
                     {name:'推荐',icon:'hot-o',linkTo:'recomend'},
@@ -24,6 +25,10 @@
                     {name:'个人中心',icon:'user-circle-o',linkTo:'user'}
                 ]
             }
+        },
+        mounted(){
+          this.ele = document.querySelectorAll('.van-tabbar-item').item(0)
+            console.log(this.ele)
         },
         methods: {
             handleSwitchTo(){
